@@ -28,3 +28,5 @@ phpunit.phar
 
 tests/_output/*
 tests/_support/_generated
+
+# Test ob Git commit nach move to C: www funktioniert? 
