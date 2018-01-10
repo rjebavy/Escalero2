@@ -48,6 +48,11 @@ $config = [
         ],
         */
     ],
+    'modules' => [
+        'escalero' => [
+            'class' => 'app\modules\escalero\Module',
+        ],
+    ],
     'params' => $params,
 ];
 
