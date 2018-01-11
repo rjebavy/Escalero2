@@ -1,0 +1,15 @@
+1) Controller: Escalero; 
+Model: Willkommen, SpielerAnmelden; 
+View: Startansicht, Anmelden. 
+2) Controller: Spiel; 
+Model(s): Rundentableau, Spielstandtableau; 
+View(s): Rundentableau (Wurfzellentabelle), Spielstandtableau. 
+3) Controller: Score;  
+Model(s): SpielergebnisEintragen, Bestenliste; 
+View(s): Eintragen, Bestenliste. 
+4) Controller: Admin; 
+Model(s): Spielgeschichte, Statistik, Datenpflege; 
+View(s): ?. 
+
+Web Developer, Projektarbeit Escalero2. 
+
