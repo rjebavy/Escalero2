@@ -17,6 +17,16 @@ $this->title = 'Spielmal';
     <div class="body-content">
 
         <div class="row">
+		    <div class="col-lg-4">
+                <h2>Spielmal Escalero</h2>
+
+                <p>Escalero, Eskalero oder auch Eskalero Würfelpoker ist ein vom Kartenspiel Poker
+					inspiriertes Würfelspiel, das in Österreich sehr weit verbreitet ist.
+					Verwandte Spiele sind Yacht, sowie Generala, Cheerio und des Weiteren Cameroon und 
+					Double Cameroon (mit zehn Würfeln), Crag (mit drei Würfeln), Hindenburg und Querpokern.</p>
+
+                <p><a class="btn btn-default" href="http://localhost/03_Escalero2/web/index.php?r=escalero%2Fdefault%2Findex">Escalero 2 &raquo;</a></p>
+            </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>
 
