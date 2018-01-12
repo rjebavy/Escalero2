@@ -1,4 +1,4 @@
-
+ï»¿
 Escalero-Komponente: Vorbereitung
 =================================
  
@@ -31,7 +31,7 @@ SQL draft ends here ******************************************************
 		BOOL, BOOLEAN
 		These types are synonyms for TINYINT(1). A value of zero is considered false. Nonzero values are considered true:
 
-Voreingestellter Spieler für nicht angemeldet: 
+Voreingestellter Spieler fÃ¼r nicht angemeldet: 
 spielerID: 1
 spielerSpitzname: Anonym
 spielerAngemeldet: false (0)
@@ -42,8 +42,9 @@ TODOs:
 1) Flussdiagramm EscaleroController in /doc; 12.1.18-12:23. 
 2) Tabelle 'spieler' anlegen mit MySQL Workbench; SQL-script in /db-sql; default user Anonym inserted; 12.1.18-13:16.   
 3) Yii DB-connector konfigurieren. 
-4) dazugehöriges Model kodieren. 
-5) dazugehörige View kodieren. 
+4) dazugehÃ¶riges Model kodieren. 
+	4.1) Entwurf, Flussdiagramm Anmelden; 12.1.18-14:14. 
+5) dazugehÃ¶rige View kodieren. 
 6) EscaleroController kodieren. 
 7) Testen. 
 .
