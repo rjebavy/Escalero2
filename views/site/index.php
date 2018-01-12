@@ -25,7 +25,7 @@ $this->title = 'Spielmal';
 					Verwandte Spiele sind Yacht, sowie Generala, Cheerio und des Weiteren Cameroon und 
 					Double Cameroon (mit zehn Würfeln), Crag (mit drei Würfeln), Hindenburg und Querpokern.</p>
 
-                <p><a class="btn btn-default" href="http://localhost/03_Escalero2/web/index.php?r=escalero%2Fdefault%2Findex">Escalero 2 &raquo;</a></p>
+                <p><a class="btn btn-default" href="http://localhost/03_Escalero2/web/index.php?r=escalero%2Fescalero%2Fwillkommen">Escalero 2 &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>
