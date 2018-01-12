@@ -13,7 +13,7 @@ use yii\base\Model;
  */
 class AnmeldenForm extends Model
 {
-    public $username;
+    public $spitzname;
 
     private $_user = false;
 
@@ -25,7 +25,7 @@ class AnmeldenForm extends Model
     {
         return [
             // username required
-            [['username'], 'required'],
+            [['spitzname'], 'required'],
         ];
     }
 
@@ -49,7 +49,7 @@ class AnmeldenForm extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = User::findByUsername($this->username);
+            $this->_user = User::findByUsername($this->spitzname);
         }
 
         return $this->_user;

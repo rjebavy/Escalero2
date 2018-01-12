@@ -7,13 +7,13 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Anmelden';
+$this->title = 'Bei Escalero anmelden';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+    <p>Bitte untenstehendes Feld ausfüllen um Anzumelden:</p>
 
     <?php $form = ActiveForm::begin([
         'id' => 'anmelden-form',
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+        <?= $form->field($model, 'spitzname')->textInput(['autofocus' => true]) ?>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
