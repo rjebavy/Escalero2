@@ -43,7 +43,8 @@ TODOs:
 2) Tabelle 'spieler' anlegen mit MySQL Workbench; SQL-script in /db-sql; default user Anonym inserted; 12.1.18-13:16.   
 3) Yii DB-connector konfigurieren. 
 4) dazugehöriges Model kodieren. 
-	4.1) Entwurf, Flussdiagramm Anmelden; 12.1.18-14:14. 
+	4.1) Entwurf, Flussdiagramm 'Anmelden'; 12.1.18-14:14. 
+	4.2) Powerpoint, Flussdiagramm 'Anmelden'; 12.1.18-22:07. 
 5) dazugehörige View kodieren. 
 6) EscaleroController kodieren. 
 7) Testen. 
@@ -59,6 +60,6 @@ TODOs:
 		21.1.18-20:31. 
 	
 
-.
+>>> geschätztes Ende 22:15. 
 
 
