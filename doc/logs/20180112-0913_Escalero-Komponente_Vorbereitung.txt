@@ -1,10 +1,10 @@
 ﻿
-Escalero-Komponente: Vorbereitung
-=================================
+Escalero-Komponente: Vorbereitung; Funktion - Anmelden. 
+===========================================================================
  
 	EscaleroController; 
-		Model(s): ; . 
-		View(s): spieler-anmelden; .  
+		Model(s): AnmeldenForm; Spieler;  . 
+		View(s): anmelden; .  
 	
 
 
@@ -47,6 +47,18 @@ TODOs:
 5) dazugehörige View kodieren. 
 6) EscaleroController kodieren. 
 7) Testen. 
+	7.1) namespace Problem mit EscaleroController behoben. 
+	7.2) Spitzname; Regel 'required' funktioniert (das lässt also nicht den im Text erwähnten Spielraum nicht anzumelden!). 
+	7.3) Nach klicken des Anmeldebuttons: "Class 'app\modules\escalero\models\User' not found". 
+		Muss eine Klasse 'Spieler' anlegen und Model 'AnmeldenForm' anpassen. 
+			Als Vorlage für 'Spieler' die Klasse 'User' (in @app/models) verwenden. 
+			In Anmeldeform einbinden der statischen Methoden findBySpitzname & logonBySpitzname aus Klasse Spieler.
+	7.4) Irgendwas hat's da, nach klick auf [Anmelden], keine Fehlermeldung aber auch kein neuer Eintrag in DB! 18:50. 
+		Versuch die ActiveRecord  Klasse Spieler via Gii zu generieren? schaut auch nicht anders aus als meine!  
+		Für heute Fehlersuche 'Anmeldung' abgebrochen; 
+		21.1.18-20:31. 
+	
+
 .
 
 
