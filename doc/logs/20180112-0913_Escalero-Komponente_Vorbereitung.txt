@@ -40,7 +40,7 @@ spielerAngemeldet: false (0)
 
 TODOs: 
 1) Flussdiagramm EscaleroController in /doc; 12.1.18-12:23. 
-2) Tabelle anlegen mit MySQL Workbench; SQL-script in /db; .   
+2) Tabelle 'spieler' anlegen mit MySQL Workbench; SQL-script in /db-sql; default user Anonym inserted; 12.1.18-13:16.   
 3) Yii DB-connector konfigurieren. 
 4) dazugehöriges Model kodieren. 
 5) dazugehörige View kodieren. 
