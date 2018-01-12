@@ -1,0 +1,51 @@
+
+Escalero-Komponente: Vorbereitung
+=================================
+ 
+	EscaleroController; 
+		Model(s): ; . 
+		View(s): spieler-anmelden; .  
+	
+
+
+
+mySQL Tabelle: spieler 
+
+SQL draft starts here *****************************************************
+
+-- -----------------------------------------------------
+-- Table `yii2escalero`.`spieler`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `yii2escalero`.`spieler` ;
+
+CREATE TABLE IF NOT EXISTS `ressourcen-verwaltung`.`mitarbeiter` (
+  `spielerID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `spielerSpitzname` VARCHAR(25) NOT NULL,
+  `spielerAngemeldet` BOOLEAN NOT NULL DEFAULT FALSE,
+  PRIMARY KEY (`spielerID`),
+ENGINE = InnoDB;
+
+SQL draft ends here ******************************************************
+
+	Quelle: https://dev.mysql.com/doc/refman/5.7/en/numeric-type-overview.html
+		BOOL, BOOLEAN
+		These types are synonyms for TINYINT(1). A value of zero is considered false. Nonzero values are considered true:
+
+Voreingestellter Spieler für nicht angemeldet: 
+spielerID: 1
+spielerSpitzname: Anonym
+spielerAngemeldet: false (0)
+
+
+
+TODOs: 
+1) Flussdiagramm EscaleroController in /doc; 12.1.18-12:23. 
+2) Tabelle anlegen mit MySQL Workbench; SQL-script in /db; .   
+3) Yii DB-connector konfigurieren. 
+4) dazugehöriges Model kodieren. 
+5) dazugehörige View kodieren. 
+6) EscaleroController kodieren. 
+7) Testen. 
+.
+
+
