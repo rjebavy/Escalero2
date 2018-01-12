@@ -21,9 +21,6 @@ class EscaleroController extends Controller
      */
     public function actionAnmelden()
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
 
         $model = new AnmeldenForm();
         if ($model->load(Yii::$app->request->post()) && $model->anmelden()) {

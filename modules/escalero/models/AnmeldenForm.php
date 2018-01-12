@@ -24,32 +24,34 @@ class AnmeldenForm extends Model
     public function rules()
     {
         return [
-            // username required
+            // Spitzname required
             [['spitzname'], 'required'],
         ];
     }
 
      /**
-     * Logs in a user using the provided username.
+     * Logs in a user using the provided Spitzname.
      * @return bool whether the user is logged in successfully
      */
     public function anmelden()
     {
+		// echo "bin in AnmeldenForm, function anmelden"; 
         if ($this->validate()) {
-            return Yii::$app->user->login($this->getUser());
+			echo "bin in AnmeldenForm, function anmelden, nach validate"; 
+            return Spieler::logonBySpitzname($this->getSpieler());
         }
         return false;
     }
 
     /**
-     * Finds user by [[username]]
+     * Finds Spieler by [[spitzname]]
      *
      * @return User|null
      */
-    public function getUser()
+    public function getSpieler()
     {
         if ($this->_user === false) {
-            $this->_user = User::findByUsername($this->spitzname);
+            $this->_user = Spieler::findBySpitzname($this->spitzname);
         }
 
         return $this->_user;
