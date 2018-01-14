@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\modules\escalero\models\Wuerfelwerte */
 
 $this->title = $model->wuerfelwert;
-$this->params['breadcrumbs'][] = ['label' => 'Wuerfelwertes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Wuerfelwerte', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="wuerfelwerte-view">

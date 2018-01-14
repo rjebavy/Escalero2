@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model app\modules\escalero\models\Wuerfelwerte */
 
 $this->title = 'Create Wuerfelwerte';
-$this->params['breadcrumbs'][] = ['label' => 'Wuerfelwertes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Wuerfelwerte', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="wuerfelwerte-create">
