@@ -153,9 +153,53 @@ ACTIVITY:
 					Views create, updates & view; breadcrums korrigiert. 
 			URL: http://localhost/03_Escalero2/web/index.php?r=escalero%2Fwuerfeltableau%2Findex in Textfile gesichert. 
 		commit/push; 16:39. 
-16:?? - 17:00	CRUD Wuerfeltableau; Würfel 1 - 5 angelegt, alle mit Wert 7, Bild XX und halten 0; 16:45. 
+16:?? - 17:00:	CRUD Wuerfeltableau; Würfel 1 - 5 angelegt, alle mit Wert 7, Bild XX und halten 0; 16:45. 
 		A5 Notizbuch, Entwürfe Spiel Rundentableau; 16:58. 
 		commit/push. 
+
+
+19:00 - 21:25: 	A5 Notizbuch, Entwurf Spiel Rundentableau, erweitert; 19:15. 
+			Spalte 'halten' in der index-view als Checkbox Column realisieren. 
+			ActionColumn sollte 'wuerfeln', 'aktualisieren' & 'ansehen' enthalten 
+		Analyse Yii Active column Attribute, Eigenschaften & Verhalten: 
+			Dazu View-render-komponente aus escalero-willkommen verwenden: 
+				    <p>
+
+				       This is the view content for action "<?= $this->context->action->id ?>".
+
+				       The action belongs to the controller "<?= get_class($this->context) ?>"
+
+				       in the "<?= $this->context->module->id ?>" module.
+
+				    </p> 
+				
+			Active column button {update} enthält URL auf controller-action Update. 
+			actionUpdate 
+				sucht zuerst das gewünschte model (Datensatz) zu finden (protected function findModel($id))
+				schaut ob sich ob der Knopf gedrückt wurde (if clause)
+					($model->load(Yii::$app->request->post())
+				UND gespeichert wurde 
+					$model->save()
+				WENN ja wird der Browser umgelenkt auf die Standardansicht view des Modells umgelenkt
+					return $this->redirect(['view', 'id' => $model->id]);
+				SONST (keine Änderung) ruft es Ansicht update auf 
+					return $this->render('update', [
+ 'model' => $model, ]);
+			View update, öffnet Ansicht _form, 
+				_form zeigt felder untereinander an 
+				der submitButton ist mit 2 verschachtelten conditional statements versehen!! 
+				<?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', 
+				['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?> 
+			Der Knopf ändert je nach nach Zustand des Models ($model->isNewRecord ?)
+				Beschriftung, Farbe & Typ 
+					entweder [Create], grün &  'btn btn-success'
+					oder [Update], blau &  'btn btn-primary'
+		
+			
+		Yii Escalero2; Komponente Rundentableau erstellen. 
+			Controller: RundentableauController - als Kopie vom WuerfeltableauController 
+			Model: Wuerfeltableau 
+			Views: 
 
 
 
