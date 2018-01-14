@@ -82,16 +82,26 @@ ACTIVITY:
 11:30 - 12:00: 	Escalero2.pptx; MVC Struktur Admin angepasst & single slide PDF-printed, 11:54. Mit Commit/Push 12:00. 
 12:00 - 12:30: 	MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQL-script in /db-sql.  
 12:30 - 13:00: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; WuerfelwerteController basierend auf CountryController im 			App- NICHT Modules-Kontext!!
-13:00 - 13:20: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Models Wuerfelwerte & WuerfelwerteSearch im 
+13:00 - 13:27: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Models Wuerfelwerte & WuerfelwerteSearch im 
 		App- NICHT Modules-Kontext!! 
-13:20 - 1?:??: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Views im 
+13:27 - 1?:??: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Views im 
 		App- NICHT Modules-Kontext!! 
 			3.3.1) _form. 
 			3.3.2) _search. 
 			3.3.3) create. 
 			3.3.4) index. 
 			3.3.5) update. 
-			3.3.6) view. 				
+			3.3.6) view. 	
+		ICH BIN EIN KOFFER!!!
+	>>>>>>>	Für Country hab ich das mit Gii CRUD Generator gemacht!! 
+		Zurückrudern: 
+			Eclipse schliessen; 13:45. 
+			WuerfelwerteController aus C:\wamp64\www\03_Escalero2\controllers löschen. 
+			Models Wuerfelwerte & WuerfelwerteSearch aus C:\wamp64\www\03_Escalero2\models löschen. 
+			Views _form & _search aus C:\wamp64\www\03_Escalero2\views\wuerfelwerte löschen. 
+			Verzeichnis wuerfelwerte in C:\wamp64\www\03_Escalero2\views löschen. 
+		commit/push. 
+			
 
 
 
