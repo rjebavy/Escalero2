@@ -37,6 +37,16 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+	        [
+            'label' => 'Spiele',
+            'items' => [
+                 '<li class="dropdown-header">Würfelspiele</li>',			
+                 ['label' => 'Escalero', 'url' => 'http://localhost/03_Escalero2/web/index.php?r=escalero%2Fescalero%2Findex'],
+                 '<li class="divider"></li>',
+                 '<li class="dropdown-header">Kartenspiele</li>',
+                 ['label' => 'noch keins verfügbar ', 'url' => '#'],
+            ],
+        ],		
             ['label' => 'Startseite', 'url' => ['/site/index']],
             ['label' => 'Über uns', 'url' => ['/site/about']],
             ['label' => 'Kontakt', 'url' => ['/site/contact']],
