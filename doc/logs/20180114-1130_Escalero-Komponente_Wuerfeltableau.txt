@@ -1,0 +1,69 @@
+﻿Dem SCRUM Modell folgend 1 Review per Tag (24 Stunden); in meinem Fall Tageslog. 
+Anmerkung: Bereich in geschwungenen Klammern {{} wurden heute nicht ausgeführt bzw. dienen als Vorlage. 
+
+
+Escalero-Komponente: Spiel; Funktion - Wuerfeltableau. 
+===========================================================================
+ 
+	AdminController; 
+		Model(s): Wuerfeltableau; Wuerfelwerte;  . 
+		View(s): 
+			Wuerfeltableau; CRUD. 
+			Wuerfelwerte;  CRUD. 
+
+
+
+
+{{mySQL Tabelle: spieler 
+
+SQL draft starts here *****************************************************
+
+-- -----------------------------------------------------
+-- Table `yii2escalero`.`spiel`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `yii2escalero`.`spiel` ;
+
+CREATE TABLE IF NOT EXISTS `ressourcen-verwaltung`.`mitarbeiter` (
+  `spielerID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `spielerSpitzname` VARCHAR(25) NOT NULL,
+  `spielerAngemeldet` BOOLEAN NOT NULL DEFAULT FALSE,
+  PRIMARY KEY (`spielerID`),
+ENGINE = InnoDB;
+
+SQL draft ends here ******************************************************
+
+	Quelle: https://dev.mysql.com/doc/refman/5.7/en/numeric-type-overview.html
+		BOOL, BOOLEAN
+		These types are synonyms for TINYINT(1). A value of zero is considered false. Nonzero values are considered true:
+}
+
+
+
+TODOs: 
+1) Escalero2.pptx; MVC Struktur Admin anpassen, statt Model "Datenpflege", "Datenpflege 1 je Tabelle". 
+2) MySQL Workbench; Tabelle '?' anlegen; SQL-script in /db-sql. 
+3) . 
+4) . 
+	4.1) . 
+	4.2) . 
+5) . 
+6) . 
+
+{{n) <topic>. 
+	n.1) <activity>. 
+	n.2) <activity>. 
+	n.3) <activity>. 
+}
+
+
+
+ACTIVITY: 
+11:15 - 11:30:	A5 Notizbuch & Q9h Appointment, Escalero Datenbankansatz; Anmeldedialog, Wuerfeltableau, Wuerfelwerte. 
+11:30 - 11:54: 	Escalero2.pptx; MVC Struktur Admin angepasst & single slide PDF-printed. 
+
+
+
+
+>>> geschätztes Tagesende ??:??. 
+
+
