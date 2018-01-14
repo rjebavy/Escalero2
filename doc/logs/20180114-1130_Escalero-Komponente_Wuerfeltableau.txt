@@ -53,8 +53,10 @@ check 3) Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte.
 	ABBRUCH: stattdessen Gii CRUD Generator verwenden!! 
 check 4) Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfelwerte generieren. 
 check 5) Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfeltableau generieren. 
-6) Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin. 
-7) Yii Escalero2; Komponente Rundentableau erstellen.  
+check 6) Yii Escalero2; Escalero in Spielmal Site Nav-bar, d.h. @app/views/layouts/main.php eintragen
+check 7) Vor Generierung der Menükomponente Admin, die Escalero Indexseite gestalten, analog Site-index. 
+8) Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin. 
+9) Yii Escalero2; Komponente Rundentableau erstellen.  
 
 {{n) <topic>. 
 	n.1) <activity>. 
@@ -219,41 +221,48 @@ ACTIVITY:
 			5. Reihe; Checkbox Column; 'halten'. Aktion => halten true|false (1|0) eintragen. 		
 		commit/push; 22:07. 
 
-22:07 - 2?:??:	Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin.
-			Escalero in Spielmal Site Nav-bar, d.h. @app/views/layouts/main.php eintragen; 
-				    echo Nav::widget([
-				
+22:07 - 23:44:	Escalero in Spielmal Site Nav-bar, d.h. @app/views/layouts/main.php eintragen; 
+			    echo Nav::widget([
+			
         'options' => ['class' => 'navbar-nav navbar-right'],
 
-					        'items' => [
+				        'items' => [
 
-					            ['label' => 'Startseite', 'url' => ['/site/index']],
+				            ['label' => 'Startseite', 'url' => ['/site/index']],
 
-					            ..
-						    ['label' => 'Escalero', 'url' => ['/modules/escalero/views/escalero/index']] 
-				Hat nicht funktioniert; weiter Analyse: 
-					siehe auch
-						http://www.yiiframework.com/doc-2.0/yii-bootstrap-nav.html#$items-detail
-						http://www.yiiframework.com/doc-2.0/guide-runtime-routing.html
-						http://www.yiiframework.com/doc-2.0/yii-base-module.html#$defaultRoute-detail 
-							The route may consist of child module ID, controller ID, and/or action ID. 
-							For example, help, post/create, admin/post/create
- 						    ['label' => 'Escalero', 'url' => ['/escalero/escalero/index']] 
-				Hmm, irgendein unlösbares Problem wenn nach dem Kode im Nav-Bar Widget eingefügt wird. 
-				Deshalb als Dropdown Nav vor Startseite eingefügt: 
-					Spiele 
-						Würfelspiele
-							Escalero 
+				            ..
+					    ['label' => 'Escalero', 'url' => ['/modules/escalero/views/escalero/index']] 
+			Hat nicht funktioniert; weiter Analyse: 
+				siehe auch
+					http://www.yiiframework.com/doc-2.0/yii-bootstrap-nav.html#$items-detail
+					http://www.yiiframework.com/doc-2.0/guide-runtime-routing.html
+					http://www.yiiframework.com/doc-2.0/yii-base-module.html#$defaultRoute-detail 
+						The route may consist of child module ID, controller ID, and/or action ID. 
+						For example, help, post/create, admin/post/create
+ 					    ['label' => 'Escalero', 'url' => ['/escalero/escalero/index']] 
+			Hmm, irgendein unlösbares Problem wenn nach dem Kode im Nav-Bar Widget eingefügt wird?!  
+			Deshalb als Dropdown Nav vor Startseite eingefügt: 
+				Spiele 
+					Würfelspiele
+						Escalero 
 							(URL http://localhost/03_Escalero2/web/index.php?r=escalero%2Fescalero%2Findex)
 						------------
 						Kartenspiele
 							noch keins verfügbar 
 							(URL #)
-				Test: OK, und Screenshot. 
-		commit/push; 23:4?. 
-							
+			Test: OK, und Screenshot. 
+		commit/push; 23:42. 
+
+23:47 - ??:??:	Vor Generierung der Menükomponente Admin, die Escalero Indexseite gestalten, analog Site-index. 
+			Spielmal index kopiert. 
+			Seitentitel, Kopfbereich (header, Wähle ...) angepasst. 
+			Element 1, 'Escaler administrieren' , Detailtext, Link und Linktest, OK.  
+			Die beiden anderen Elemente bezeichnet, 'Irgendwas 2' & 'Irgendwas 2'; beide mit Link URL '#', Test, OK.  
+		FMsync C-Mirror & 32GB Stick; 00:41. 
+		commit/push; 00:2?. 
+
+??:?? - ??:??:	Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin.							
 			Controller: AdminController
-				
 			Model: AdminMenue
 			View: adminmenue
 
