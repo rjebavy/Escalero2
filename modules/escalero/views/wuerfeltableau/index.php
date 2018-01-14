@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\modules\escalero\models\WuerfeltableauSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Wuerfeltableaus';
+$this->title = 'Wuerfeltableau';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="wuerfeltableau-index">

@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model app\modules\escalero\models\Wuerfeltableau */
 
 $this->title = 'Create Wuerfeltableau';
-$this->params['breadcrumbs'][] = ['label' => 'Wuerfeltableaus', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Wuerfeltableau', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="wuerfeltableau-create">

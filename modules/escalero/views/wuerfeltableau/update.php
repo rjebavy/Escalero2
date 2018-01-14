@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\modules\escalero\models\Wuerfeltableau */
 
 $this->title = 'Update Wuerfeltableau: ' . $model->wuerfel;
-$this->params['breadcrumbs'][] = ['label' => 'Wuerfeltableaus', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Wuerfeltableau', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->wuerfel, 'url' => ['view', 'id' => $model->wuerfel]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
