@@ -42,7 +42,7 @@ SQL draft ends here ******************************************************
 TODOs: 
 check 1) Escalero2.pptx; MVC Struktur Admin anpassen, statt Model "Datenpflege", "Datenpflege 1 je Tabelle". 
 check 2) MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQL-script in /db-sql. 
-3) Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte. 
+check 3) Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte. 
 	check 3.1) WuerfelwerteController. 
 	check 3.2) Models. 
 		3.3.1) Wuerfelwerte. 
@@ -50,24 +50,14 @@ check 2) MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQ
 	3.3) Views. 	
 		3.3.1) _form. 
 		3.3.2) _search. 
-		3.3.3) create. 
-		3.3.4) index. 
-		3.3.5) update. 
-		3.3.6) view. 
-4) Yii Escalero2; Controller, Model & CRUD Views für Wuerfeltableau. 
-	4.1) WuerfeltableauController. 
-	4.2) Models. 
-		4.3.1) Wuerfeltableau. 
-		4.3.2) WuerfeltableauSearch. 
-	4.3) Views. 	
-		4.3.1) _form. 
-		4.3.2) _search. 
-		4.3.3) create. 
-		4.3.4) index. 
-		4.3.5) update. 
-		4.3.6) view.  
-5) . 
-6) . 
+	ABBRUCH: stattdessen Gii CRUD Generator verwenden!! 
+check 4) Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfelwerte generieren. 
+5) Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfeltableau generieren. 
+6) Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin. 
+		Controller: AdminController
+		Model: AdminMenue
+		View: adminmenue
+7) . 
 
 {{n) <topic>. 
 	n.1) <activity>. 
@@ -81,10 +71,11 @@ ACTIVITY:
 11:15 - 11:30:	A5 Notizbuch & Q9h Appointment, Escalero Datenbankansatz; Anmeldedialog, Wuerfeltableau, Wuerfelwerte. 
 11:30 - 12:00: 	Escalero2.pptx; MVC Struktur Admin angepasst & single slide PDF-printed, 11:54. Mit Commit/Push 12:00. 
 12:00 - 12:30: 	MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQL-script in /db-sql.  
-12:30 - 13:00: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; WuerfelwerteController basierend auf CountryController im 			App- NICHT Modules-Kontext!!
+12:30 - 13:00: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; WuerfelwerteController basierend auf CountryController im 
+		App- NICHT Modules-Kontext!!
 13:00 - 13:27: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Models Wuerfelwerte & WuerfelwerteSearch im 
 		App- NICHT Modules-Kontext!! 
-13:27 - 1?:??: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Views im 
+13:27 - 13:49: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Views im 
 		App- NICHT Modules-Kontext!! 
 			3.3.1) _form. 
 			3.3.2) _search. 
@@ -93,15 +84,78 @@ ACTIVITY:
 			3.3.5) update. 
 			3.3.6) view. 	
 		ICH BIN EIN KOFFER!!!
-	>>>>>>>	Für Country hab ich das mit Gii CRUD Generator gemacht!! 
-		Zurückrudern: 
+	>>>>>>>	Zurückrudern: Für Country hab ich das mit Gii CRUD Generator gemacht!! 
 			Eclipse schliessen; 13:45. 
 			WuerfelwerteController aus C:\wamp64\www\03_Escalero2\controllers löschen. 
 			Models Wuerfelwerte & WuerfelwerteSearch aus C:\wamp64\www\03_Escalero2\models löschen. 
 			Views _form & _search aus C:\wamp64\www\03_Escalero2\views\wuerfelwerte löschen. 
 			Verzeichnis wuerfelwerte in C:\wamp64\www\03_Escalero2\views löschen. 
 		commit/push. 
-			
+13:49 - 15:07:	Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfelwerte generieren. 
+			siehe auch http://www.yiiframework.com/doc-2.0/guide-start-gii.html#generating-crud
+			Active Record Class: 
+				Table Name: wuerfelwerte 
+				Model Class: Wuerfelwerte 
+				Namespace: app\modules\escalero\models
+				generated with screenshots. 
+			CRUD: 
+				Model Class: app\modules\escalero\models\Wuerfelwerte
+				Search Model Class: app\modules\escalero\models\WuerfelwerteSearch
+				Controller Class: app\modules\escalero\controllers\WuerfelwerteController
+				View Path: @app/modules/escalero/views/wuerfelwerte
+				generated with screenshots. 
+			Tests: OK, außer: Indextitel "Wuerfelwertes", CRUD Generator hängt "s" pluralform Englisch an!  
+			commit/push; 14:49. 
+		Fehler: Indextitel "Wuerfelwertes", behoben; d.h. View index.php $this->title korrigiert. 
+		URL: http://localhost/03_Escalero2/web/index.php?r=escalero%2Fwuerfelwerte%2Findex in Textfile gesichert. 
+		Screenshot CRUD-index_bei-leerer-Tabelle_moegliches-Wuerfeln-template.png in /doc/drafts gespeichert. 
+			?? Tabellenfelder wuerfel1 .. wurfel5, statt [Create Wuerfelwerte] (action create im Controller, mit dazugehöriger 
+			View) , [Wuerfeln] (action wuerfeln, setzt Werte und ruft wieder index auf). 
+		commit/push; 15:09. 
+		Mit dem CRUD gleich auch mal die Tabelle ausgefüllt wuerfelwerte 0 .. 6, mit Bild & Bedeutung. 
+			Aahh, das Ding fängt bei 1 an!! nicht Null; na gut dann also 7 als ungesetzt! 
+			Aahh, breadcrums zeigen Wuerfelwertes!! 
+
+15:07 - 15:36: VON PHILIP UNTERBROCHEN: Wordpad Speicherpfad? Nein, OpenOfficePortable auf Stick, lähmend langsam!! 
+
+15:36 - 16:02: 	Wo speichert Yii breadcrums parameter? 
+			nicht in @ap/config!! 
+				Yii Guide? 
+					http://www.yiiframework.com/doc-2.0/yii-widgets-breadcrumbs.html#$links-detail
+						public array, List of links to appear in the breadcrumbs. 
+				Aha: da es über actionCreate ging kommen breadcrums aus View create: 
+					$this->params['breadcrumbs'][] = ['label' => 'Wuerfelwertes', 'url' => ['index']]; korrigiert. 
+				Andere Views prüfen?  
+					auch updates korrigiert. 
+					auch view korrigiert. 
+			Test: OK. 
+		Wuerfelwerte 2 - 7 erzeugt. 
+		commit/push.
+16:02 - 16:14: 	Hab beim Datenbankdesign vergessen die ERM Ansicht zu speichern! 
+			MySQL Workbench; Tabellen 'spieler', 'wuerfelwerte' & 'wuerfeltableau'; ERM PDF-print in /db-sql. 
+		commit/push; ??:??. 
+16:14 - 16:??: 	Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfeltableau generieren. 
+			Active Record Class: 
+				Table Name: wuerfeltableau 
+				Model Class: Wuerfeltableau 
+				Namespace: app\modules\escalero\models
+				generated without screenshots. 
+			CRUD: 
+				Model Class: app\modules\escalero\models\Wuerfeltableau
+				Search Model Class: app\modules\escalero\models\WuerfeltableauSearch
+				Controller Class: app\modules\escalero\controllers\WuerfeltableauController
+				View Path: @app/modules/escalero/views/wuerfeltableau
+				generated without screenshots; 16:26. 
+			commit/push; 16:34. 
+			Tests: OK, außer: Indextitel "Wuerfeltableaus", CRUD Generator hängt "s" pluralform Englisch an!  
+				Fehler: 
+					Indextitel "Wuerfeltableaus", behoben; d.h. View index.php $this->title korrigiert. 
+					Views create, updates & view; breadcrums korrigiert. 
+			URL: http://localhost/03_Escalero2/web/index.php?r=escalero%2Fwuerfeltableau%2Findex in Textfile gesichert. 
+		commit/push; 16:39. 
+16:?? - 17:00	CRUD Wuerfeltableau; Würfel 1 - 5 angelegt, alle mit Wert 7, Bild XX und halten 0; 16:45. 
+		A5 Notizbuch, Entwürfe Spiel Rundentableau; 16:58. 
+		commit/push. 
 
 
 
