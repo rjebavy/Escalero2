@@ -154,11 +154,11 @@ ACTIVITY:
 			URL: http://localhost/03_Escalero2/web/index.php?r=escalero%2Fwuerfeltableau%2Findex in Textfile gesichert. 
 		commit/push; 16:39. 
 16:?? - 17:00:	CRUD Wuerfeltableau; Würfel 1 - 5 angelegt, alle mit Wert 7, Bild XX und halten 0; 16:45. 
-		A5 Notizbuch, Entwürfe Spiel Rundentableau; 16:58. 
+		A5 Notizbuch, Entwürfe Spiel Rundentableau (1); 16:58. 
 		commit/push. 
 
 
-19:00 - 21:25: 	A5 Notizbuch, Entwurf Spiel Rundentableau, erweitert; 19:15. 
+19:00 - 21:29: 	A5 Notizbuch, Entwurf Spiel Rundentableau (2), erweitert; 19:15. 
 			Spalte 'halten' in der index-view als Checkbox Column realisieren. 
 			ActionColumn sollte 'wuerfeln', 'aktualisieren' & 'ansehen' enthalten 
 		Analyse Yii Active column Attribute, Eigenschaften & Verhalten: 
@@ -194,9 +194,35 @@ ACTIVITY:
 				Beschriftung, Farbe & Typ 
 					entweder [Create], grün &  'btn btn-success'
 					oder [Update], blau &  'btn btn-primary'
-		
+		commit/push; 21:29. 
+21:29 - 22:05:	Analyse Yii Active Record; Attribute, Eigenschaften & Verhalten: 
+			Siehe dazu auch http://www.yiiframework.com/doc-2.0/guide-db-active-record.html
+				..
+				Querying Data
+				Accessing Data
+				Saving Data
+				Deleting Data
+				..
+			".. Active Record instances are considered as models.  ..". 
+			Saving Data
+				// update an existing row of data
+				$customer = Customer::findOne(123);
+				$customer->email = 'james@newexample.com';
+				$customer->save();
+		A5 Notizbuch, Entwurf Spiel Rundentableau (3): 
+			Kopf-Button [Wuerfeln] 
+				Aktion(en) => 
+					Durchs Rundentableau iterieren (<=5)
+						Wenn NICHT halten 
+							Zufallszahl generieren & eintragen
+					Ansicht Rundentableau view aufrufen.  
+			horizontale Anordung der Felder = untereinander (das ergibt optisch 1 SPalte je Würfel). 
+			1. Reihe; Serial Column (#: 1 2 3 4 5) 
+			2. - 4. Reihe; alle Data Column; 'wert', 'bild', 'bedeutung'; nicht Input-Typ, nur anzeigen. 
+			5. Reihe; Checkbox Column; 'halten'. Aktion => halten true|false (1|0) eintragen. 		
+
 			
-		Yii Escalero2; Komponente Rundentableau erstellen. 
+2?:?? - 2?:??:	Yii Escalero2; Komponente Rundentableau erstellen. 
 			Controller: RundentableauController - als Kopie vom WuerfeltableauController 
 			Model: Wuerfeltableau 
 			Views: 
