@@ -119,7 +119,13 @@ ACTIVITY:
 		Screenshot des Formulars nach drafts, die 3 MVC Dateien in samples/ Unterordner gesichert, und mit dieser Tageslogversion 		commited & pushed. 
 
 
-
+22:45 - 02:52: 	Test: Realisierung Komponente 'Wuerfeln' mit Datenbankansatz. 
+			Ansichtsentwurf (A5 Notizbuch), basierend auf Grundansicht wie bei 'Country'. 
+			... 
+			Im Yii Framework auf keinen grünen Zweig gekommen, ich seh nicht einmal die Ausgaben. 
+		Editor auf Eclipse umgestellt (Notepad++ nur für's kurz nachschauen). 
+		Versucht den Beispielkode Poker Dice in Eclipse zum Laufen zu bekommen, auch nix!!
+		Abbruch!! 
 
 
 
