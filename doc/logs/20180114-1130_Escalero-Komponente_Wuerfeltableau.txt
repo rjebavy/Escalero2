@@ -40,12 +40,32 @@ SQL draft ends here ******************************************************
 
 
 TODOs: 
-1) Escalero2.pptx; MVC Struktur Admin anpassen, statt Model "Datenpflege", "Datenpflege 1 je Tabelle". 
-2) MySQL Workbench; Tabelle '?' anlegen; SQL-script in /db-sql. 
-3) . 
-4) . 
-	4.1) . 
-	4.2) . 
+check 1) Escalero2.pptx; MVC Struktur Admin anpassen, statt Model "Datenpflege", "Datenpflege 1 je Tabelle". 
+check 2) MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQL-script in /db-sql. 
+3) Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte. 
+	check 3.1) WuerfelwerteController. 
+	check 3.2) Models. 
+		3.3.1) Wuerfelwerte. 
+		3.3.2) WuerfelwerteSearch. 
+	3.3) Views. 	
+		3.3.1) _form. 
+		3.3.2) _search. 
+		3.3.3) create. 
+		3.3.4) index. 
+		3.3.5) update. 
+		3.3.6) view. 
+4) Yii Escalero2; Controller, Model & CRUD Views für Wuerfeltableau. 
+	4.1) WuerfeltableauController. 
+	4.2) Models. 
+		4.3.1) Wuerfeltableau. 
+		4.3.2) WuerfeltableauSearch. 
+	4.3) Views. 	
+		4.3.1) _form. 
+		4.3.2) _search. 
+		4.3.3) create. 
+		4.3.4) index. 
+		4.3.5) update. 
+		4.3.6) view.  
 5) . 
 6) . 
 
@@ -59,8 +79,19 @@ TODOs:
 
 ACTIVITY: 
 11:15 - 11:30:	A5 Notizbuch & Q9h Appointment, Escalero Datenbankansatz; Anmeldedialog, Wuerfeltableau, Wuerfelwerte. 
-11:30 - 11:54: 	Escalero2.pptx; MVC Struktur Admin angepasst & single slide PDF-printed. 
-
+11:30 - 12:00: 	Escalero2.pptx; MVC Struktur Admin angepasst & single slide PDF-printed, 11:54. Mit Commit/Push 12:00. 
+12:00 - 12:30: 	MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQL-script in /db-sql.  
+12:30 - 13:00: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; WuerfelwerteController basierend auf CountryController im 			App- NICHT Modules-Kontext!!
+13:00 - 13:20: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Models Wuerfelwerte & WuerfelwerteSearch im 
+		App- NICHT Modules-Kontext!! 
+13:20 - 1?:??: 	Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte; Views im 
+		App- NICHT Modules-Kontext!! 
+			3.3.1) _form. 
+			3.3.2) _search. 
+			3.3.3) create. 
+			3.3.4) index. 
+			3.3.5) update. 
+			3.3.6) view. 				
 
 
 
