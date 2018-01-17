@@ -70,13 +70,25 @@ check 7) Vor Generierung der Menükomponente Admin, die Escalero Indexseite gest
 
 
 ACTIVITY: 
-Vom 15.1.2018 00:44 an bis 17.1.2018 15:18; siehe auch A5 Notizbuch.  
+Vom 15.1.2018 00:44 an bis 17.1.2018 15:18; siehe auch A5 Notizbuch. 
+		commit/push; 15:??. 
+			Logging Konfiguration geändert & erweitert.
+
+			@app/config/web.php; 'components' => [ 'log'=> [ ..., ... ] ] ...
+
+			Laut eBook Yii2 Application Development Cookbook; Chapter 12. Debugging, Logging, and Error Handling. 
 15:18 - 1?:??:	Den neu erzeugten Git branch umbenannt von 'test-yii2-legdebug' auf 'test-yii2-logdebug'; 
 			das hat den brunch, aber nicht den dazugehörigen origin/ geändert? 
 		Hab noch immer keine branch Abzweigung angezeigt (nur den einzigen ursprünglichen Pfad)?! 
 			OK, noch ein commit auf den neuen branch; diese Datei angelegt und gesichert.
 		commit/push; 15:25.  
+		noch immer keine Abzweigung im Graph!!
+		Was ist wenn ich vorher Master auschecke? 
+			der master bleibt zurück. 
+			Wenn ich weitere Änderunge committe? BINGO!! jetzt zeigt der Graph den Abzweiger.   
+		commit/push; 15:38. 
 		. 
+. 
 
 
 
