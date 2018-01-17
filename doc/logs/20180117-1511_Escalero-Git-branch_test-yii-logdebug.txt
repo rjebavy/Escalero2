@@ -79,8 +79,10 @@ Vom 15.1.2018 00:44 an bis 17.1.2018 15:18; siehe auch A5 Notizbuch.
 		noch immer keine Abzweigung im Graph!!
 		Was ist wenn ich vorher Master auschecke? 
 			der master bleibt zurück. 
-			Wenn ich weitere Änderunge committe? .  
+			Wenn ich weitere Änderunge committe? BINGO!! jetzt zeigt der Graph den Abzweiger.   
+		commit/push; 15:38. 
 		. 
+. 
 
 
 
