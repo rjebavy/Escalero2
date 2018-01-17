@@ -1,0 +1,102 @@
+﻿Dem SCRUM Modell folgend 1 Review per Tag (24 Stunden); in meinem Fall Tageslog. 
+Anmerkung: Bereich in geschwungenen Klammern {{} wurden heute nicht ausgeführt bzw. dienen als Vorlage. 
+
+
+Escalero-Komponente: Spiel; Funktion - Wuerfeltableau. 
+===========================================================================
+ 
+	AdminController; 
+		Model(s): Wuerfeltableau; Wuerfelwerte;  . 
+		View(s): 
+			Wuerfeltableau; CRUD. 
+			Wuerfelwerte;  CRUD. 
+
+
+
+
+{{mySQL Tabelle: spieler 
+
+SQL draft starts here *****************************************************
+
+-- -----------------------------------------------------
+-- Table `yii2escalero`.`spiel`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `yii2escalero`.`spiel` ;
+
+CREATE TABLE IF NOT EXISTS `ressourcen-verwaltung`.`mitarbeiter` (
+  `spielerID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `spielerSpitzname` VARCHAR(25) NOT NULL,
+  `spielerAngemeldet` BOOLEAN NOT NULL DEFAULT FALSE,
+  PRIMARY KEY (`spielerID`),
+ENGINE = InnoDB;
+
+SQL draft ends here ******************************************************
+
+	Quelle: https://dev.mysql.com/doc/refman/5.7/en/numeric-type-overview.html
+		BOOL, BOOLEAN
+		These types are synonyms for TINYINT(1). A value of zero is considered false. Nonzero values are considered true:
+}
+
+
+
+TODOs: 
+1) 
+2) extrahiere TODOs Liste aus allen Tageslogs vor bzw vom 20180114-1130. 
+
+check 1) Escalero2.pptx; MVC Struktur Admin anpassen, statt Model "Datenpflege", "Datenpflege 1 je Tabelle". 
+check 2) MySQL Workbench; Tabellen 'wuerfelwerte' & 'wuerfeltableau' anlegen; SQL-script in /db-sql. 
+check 3) Yii Escalero2; Controller, Model & CRUD Views für Wuerfelwerte. 
+	check 3.1) WuerfelwerteController. 
+	check 3.2) Models. 
+		3.3.1) Wuerfelwerte. 
+		3.3.2) WuerfelwerteSearch. 
+	3.3) Views. 	
+		3.3.1) _form. 
+		3.3.2) _search. 
+	ABBRUCH: stattdessen Gii CRUD Generator verwenden!! 
+check 4) Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfelwerte generieren. 
+check 5) Yii Escalero2; Gii2 Active Record Class & CRUD für Wuerfeltableau generieren. 
+check 6) Yii Escalero2; Escalero in Spielmal Site Nav-bar, d.h. @app/views/layouts/main.php eintragen
+check 7) Vor Generierung der Menükomponente Admin, die Escalero Indexseite gestalten, analog Site-index. 
+8) Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin. 
+9) Yii Escalero2; Komponente Rundentableau erstellen.  
+
+{{n) <topic>. 
+	n.1) <activity>. 
+	n.2) <activity>. 
+	n.3) <activity>. 
+}
+
+
+
+ACTIVITY: 
+Vom 15.1.2018 00:44 an bis 17.1.2018 15:18; siehe auch A5 Notizbuch.  
+15:18 - 1?:??:	Den neu erzeugten Git branch umbenannt von 'test-yii2-legdebug' auf 'test-yii2-logdebug'; 
+			das hat den brunch, aber nicht den dazugehörigen origin/ geändert? 
+		Hab noch immer keine branch Abzweigung angezeigt (nur den einzigen ursprünglichen Pfad)?! 
+			OK, noch ein commit auf den neuen branch; diese Datei angelegt und gesichert.
+		commit/push; 15:25.  
+		noch immer keine Abzweigung im Graph!!
+		Was ist wenn ich vorher Master auschecke? 
+			der master bleibt zurück. 
+			Wenn ich weitere Änderunge committe? .  
+		. 
+
+
+
+??:?? - ??:??:	Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin.							
+			Controller: AdminController
+			Model: AdminMenue
+			View: adminmenue
+
+			
+??:?? - ??:??:	Yii Escalero2; Komponente Rundentableau erstellen. 
+			Controller: RundentableauController - als Kopie vom WuerfeltableauController 
+			Model: Wuerfeltableau 
+			Views: 
+
+
+
+>>> geschätztes Tagesende ??:??. 
+
+
