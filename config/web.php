@@ -30,11 +30,32 @@ $config = [
             'useFileTransport' => true,
         ],
         'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'traceLevel' => 0,
             'targets' => [
                 [
+                    'class' => 'yii\log\EmailTarget',
+                    'categories' => ['example'],
+                    'levels' => ['error'],
+                    'message' => [
+                       'from' => ['log@example.com'],
+                       'to' => ['developer1@example.com', 'developer2@example.com'],
+                       'subject' => 'Log message',
+                    ],
+                ],
+                [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error'],
+                    'logFile' => '@runtime/logs/error.log',
+                ],
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['warning'],
+                    'logFile' => '@runtime/logs/warning.log',
+                ],
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['info'],
+                    'logFile' => '@runtime/logs/info.log',
                 ],
             ],
         ],
