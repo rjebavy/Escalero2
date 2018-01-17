@@ -253,13 +253,13 @@ ACTIVITY:
 			Test: OK, und Screenshot. 
 		commit/push; 23:42. 
 
-23:47 - ??:??:	Vor Generierung der Menükomponente Admin, die Escalero Indexseite gestalten, analog Site-index. 
+23:47 - 00:45:	Vor Generierung der Menükomponente Admin, die Escalero Indexseite gestalten, analog Site-index. 
 			Spielmal index kopiert. 
 			Seitentitel, Kopfbereich (header, Wähle ...) angepasst. 
 			Element 1, 'Escaler administrieren' , Detailtext, Link und Linktest, OK.  
 			Die beiden anderen Elemente bezeichnet, 'Irgendwas 2' & 'Irgendwas 2'; beide mit Link URL '#', Test, OK.  
 		FMsync C-Mirror & 32GB Stick; 00:41. 
-		commit/push; 00:2?. 
+		commit/push; 00:43. 
 
 ??:?? - ??:??:	Yii Escalero2; Controller, Model & CRUD Views für Menükomponente Admin.							
 			Controller: AdminController
